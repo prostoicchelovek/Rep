@@ -31,8 +31,8 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                view.setBackgroundColor(Color.RED);
                 Toast.makeText(MainActivity.this, "A "+color[position], Toast.LENGTH_SHORT).show();
+                view.setBackgroundColor(Color.parseColor("#00FA9A"));
             }
         });
     }
